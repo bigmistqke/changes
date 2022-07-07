@@ -1,0 +1,6 @@
+{
+  "appId": "com.bigmistqke.changes",
+  "appName": "changes",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

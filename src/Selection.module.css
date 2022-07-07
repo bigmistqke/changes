@@ -1,0 +1,60 @@
+.selection {
+  height: 100%;
+  position: absolute;
+  /* z-index: 1; */
+  top: 0px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  box-sizing: border-box;
+  mix-blend-mode: darken;
+}
+
+.handle {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background: blue;
+}
+
+.chord {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  color: black;
+  pointer-events: none;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+
+.chord.selected {
+  background: var(--selected) !important;
+}
+.chord.focused {
+  background: var(--focused) !important;
+}
+.chord:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.chord span {
+  bottom: -4pt;
+  transform: rotateZ(-90deg) translateY(-50%);
+  transform-origin: top left;
+  display: inline-block;
+  position: absolute;
+  font-size: 8pt;
+  line-height: 8pt;
+  user-select: none;
+}
+
+.chord div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.chord.selected {
+  background: var(--selected);
+}

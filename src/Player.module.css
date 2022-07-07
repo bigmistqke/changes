@@ -1,0 +1,81 @@
+.container {
+  bottom: 0;
+  position: relative;
+  background: white;
+  width: 100%;
+  min-height: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid black;
+}
+.visualizer {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+.waveContainer {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  pointer-events: none;
+}
+
+.caret {
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  background: #00ff00;
+  width: 4px;
+  margin-left: -2px;
+}
+
+.button_container {
+  background: black;
+  min-width: 100px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.play_button {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 50px;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.play_button svg {
+  height: 100%;
+  transform: scale(1.2);
+}
+
+.guide {
+  fill: none;
+}
+
+.navigation {
+  color: white;
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+.navigation label {
+  flex: 1;
+  line-height: 30px;
+}
+
+.navigation button {
+  background: var(--light);
+  border-radius: 50px;
+  border: none;
+  /* padding: 5px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 25px;
+  text-align: center;
+  border: 1px solid var(--light);
+  height: 30px;
+  width: 30px;
+}

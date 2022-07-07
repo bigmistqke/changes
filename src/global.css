@@ -1,0 +1,66 @@
+@font-face {
+  font-family: gas;
+  src: url(./assets/gas.ttf);
+}
+
+body {
+  font-family: gas;
+  --border-radius: 7px;
+  --selected: rgb(217, 216, 216);
+  --focused: rgb(164, 164, 164);
+  --light: rgb(241, 241, 241);
+}
+
+* {
+  font-family: gas !important;
+  box-sizing: border-box;
+}
+
+input {
+  font-family: arial;
+  font-size: 12pt;
+}
+input:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+* {
+  /* Foreground, Background */
+  scrollbar-width: thin;
+  scrollbar-color: var(--selected) white;
+  user-select: none;
+}
+*::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+}
+*::-webkit-scrollbar-thumb {
+  /* Foreground */
+  background: var(--selected);
+}
+*::-webkit-scrollbar-track {
+  /* Background */
+  background: white;
+}

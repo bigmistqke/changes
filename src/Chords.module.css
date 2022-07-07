@@ -1,0 +1,61 @@
+.chords {
+  width: 100%;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 2px solid black;
+  /* align-content: baseline; */
+  overflow: auto;
+  margin-bottom: -1px;
+}
+
+.chord {
+  /* height: 75px; */
+  position: relative;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.chord.selected {
+  background: var(--selected);
+}
+
+.chord.focused {
+  background: var(--focused) !important;
+}
+
+/* .chord:nth-child(4n) {
+  border-right: none;
+} */
+
+.chords_button {
+  font-size: 10pt;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  color: black;
+}
+
+.chords_button:hover {
+  background: white !important;
+  color: black !important;
+  cursor: pointer;
+}
+
+.chord_inputs {
+  width: calc(100% - 2px);
+  font-size: 16pt;
+  border: none;
+  resize: none;
+  font-family: arial;
+  padding: 10px;
+  box-sizing: border-box;
+  pointer-events: none;
+  background: transparent;
+}
+
+.chord_inputs:active,
+.chord_inputs:focus {
+  outline: none;
+}
